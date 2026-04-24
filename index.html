@@ -717,7 +717,7 @@
       <div class="socio-name">Adriel Pablo Guzmán</div>
       <p class="socio-title-tag">Contador Público · CPCECABA CP 403-219</p>
       <p class="socio-bio">
-        Fundador del estudio, egresado de la UCES y magíster en Big Data &amp; Business Intelligence por la Escuela de Negocios Europea de Barcelona (ENEB). Idóneo en Mercado de Capitales habilitado por la CNV e Idóneo en Sistema de Garantías Recíprocas (SGR). Con más de 15 años de trayectoria, combino el rigor técnico contable con una visión analítica y financiera orientada a generar valor real para cada cliente.
+        Fundador del estudio, egresado de la UCES y magíster en Big Data &amp; Business Intelligence por la Escuela de Negocios Europea de Barcelona (ENEB). Idóneo en Mercado de Capitales habilitado por la CNV e Idóneo en Sistema de Garantías Recíprocas (SGR). Con más de 15 años de trayectoria, combina el rigor técnico contable con una visión analítica y financiera orientada a generar valor real para cada cliente.
       </p>
       <div class="socio-badges">
         <span class="badge" style="border-color:rgba(196,154,60,.4);color:var(--gold-lt);">CP · UCES</span>
@@ -821,18 +821,20 @@
     </div>
     <div class="reveal">
       <form id="contactForm" onsubmit="handleSubmit(event)">
+        <input type="hidden" name="_subject" value="Nueva consulta — Estudio Guzmán & Asociados"/>
+        <input type="hidden" name="_language" value="es"/>
         <div class="form-grid">
           <div>
             <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" placeholder="Tu nombre" required/>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required/>
           </div>
           <div>
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="tu@email.com" required/>
+            <input type="email" id="email" name="email" placeholder="tu@email.com" required/>
           </div>
           <div class="full">
             <label for="servicio">Servicio de interés</label>
-            <select id="servicio">
+            <select id="servicio" name="servicio">
               <option value="">Seleccioná un servicio…</option>
               <option>Impuestos (Ganancias, IVA, IIBB…)</option>
               <option>Liquidación de Sueldos y Cargas Sociales</option>
@@ -844,12 +846,13 @@
           </div>
           <div class="full">
             <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" placeholder="Contanos brevemente tu situación o consulta…"></textarea>
+            <textarea id="mensaje" name="mensaje" placeholder="Contanos brevemente tu situación o consulta…"></textarea>
           </div>
         </div>
         <button type="submit" class="form-submit">Enviar consulta</button>
         <p class="form-note">Te responderemos dentro de las 24 hs hábiles.</p>
         <div id="form-ok">✓ ¡Mensaje recibido! Te contactaremos a la brevedad.</div>
+        <div id="form-error" style="display:none;padding:.9rem;background:rgba(180,50,50,.15);border:1px solid rgba(200,80,80,.4);border-radius:2px;color:#e07070;font-size:.88rem;text-align:center;margin-top:.5rem;">Hubo un error al enviar. Por favor intentá de nuevo o escribinos directamente a cdor.apg@icloud.com</div>
       </form>
     </div>
   </div>
@@ -885,9 +888,26 @@
 
   function handleSubmit(e) {
     e.preventDefault();
-    document.getElementById('form-ok').style.display = 'block';
-    e.target.reset();
-    setTimeout(() => document.getElementById('form-ok').style.display = 'none', 5000);
+    const form = e.target;
+    const data = new FormData(form);
+    fetch('https://formspree.io/f/mdaybaqw', {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(res => {
+      if (res.ok) {
+        document.getElementById('form-ok').style.display = 'block';
+        document.getElementById('form-error').style.display = 'none';
+        form.reset();
+        setTimeout(() => document.getElementById('form-ok').style.display = 'none', 6000);
+      } else {
+        document.getElementById('form-error').style.display = 'block';
+      }
+    })
+    .catch(() => {
+      document.getElementById('form-error').style.display = 'block';
+    });
   }
 </script>
 </body>
