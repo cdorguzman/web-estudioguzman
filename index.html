@@ -171,7 +171,7 @@
     #servicios { background: var(--dark2); }
     .services-grid {
       max-width: 1200px; margin: 0 auto;
-      display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px;
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
     }
     .service-card {
       background: var(--dark);
@@ -535,12 +535,12 @@
       <div>
       <p class="hero-tag">Estudio Impositivo Contable</p>
       <h1 class="hero-title">
-        Soluciones impositivas<br/>
-        <em>precisas, estratégicas</em><br/>
-        y confiables.
+        Soluciones <em>impositivas,<br/>
+        contables y societarias</em><br/>
+        precisas, estratégicas y confiables.
       </h1>
       <p class="hero-desc">
-        Asesoramiento contable e impositivo de alto nivel para personas y empresas en CABA. Experiencia en Mercado de Capitales, Big Data y Business Intelligence aplicados a la gestión financiera moderna.
+        En Guzmán &amp; Asociados brindamos soluciones impositivas, contables y constitución de sociedades con una visión estratégica del negocio, integrando herramientas tecnológicas para garantizar eficiencia y transparencia en cada proceso.
       </p>
       <div class="hero-btns">
         <a href="#contacto" class="btn-primary">Solicitar consulta</a>
@@ -560,7 +560,7 @@
         <div class="stat-div"></div>
       </div>
       <div>
-        <div class="stat-num">5</div>
+        <div class="stat-num">6</div>
         <div class="stat-label">Áreas de práctica</div>
       </div>
     </div>
@@ -573,7 +573,7 @@
     <div class="section-header reveal">
       <p class="section-tag">Áreas de práctica</p>
       <h2 class="section-title">Servicios profesionales</h2>
-      <p class="section-subtitle">Soluciones integrales para cumplir con tus obligaciones fiscales y optimizar tu carga tributaria — potenciadas con tecnología y analítica de datos.</p>
+      <p class="section-subtitle">Soluciones integrales para cumplir con tus obligaciones contables, fiscales, constituir tu sociedad y optimizar tu carga tributaria — potenciadas con tecnología y analítica de datos.</p>
     </div>
     <div class="services-grid">
 
@@ -631,23 +631,30 @@
         </ul>
       </div>
 
-      <div class="service-card reveal" style="grid-column: 1 / -1;">
-        <div style="display:flex;align-items:flex-start;gap:1.5rem;flex-wrap:wrap;">
-          <div>
-            <div class="service-icon">
-              <svg viewBox="0 0 24 24" stroke="currentColor" style="stroke:var(--gold)"><path d="M3 3h18v18H3zM3 9h18M9 21V9"/><polyline points="15,5 18,3 21,5"/><line x1="12" y1="3" x2="12" y2="6"/></svg>
-            </div>
-          </div>
-          <div style="flex:1;min-width:220px;">
-            <div class="service-name">Contabilidad 4.0 &amp; Business Intelligence</div>
-            <ul class="service-list" style="margin-top:.9rem;">
-              <li>Optimización de procesos contables mediante Python y Power BI</li>
-              <li>Tableros de control en tiempo real para la toma de decisiones</li>
-              <li>Automatización de reportes y detección de anomalías contables</li>
-              <li>Visualización de KPIs financieros con tecnología de vanguardia</li>
-            </ul>
-          </div>
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0H5m14 0h2M5 21H3M9 7h1m-1 4h1m4-4h1m-1 4h1M9 21v-3.5a.5.5 0 01.5-.5h5a.5.5 0 01.5.5V21"/></svg>
         </div>
+        <div class="service-name">Constitución de Sociedades</div>
+        <ul class="service-list">
+          <li>Gestión ante IGJ para SA, SRL, SAS y SAU</li>
+          <li>Trámites en CABA</li>
+          <li>Estructuración legal y societaria a medida</li>
+          <li>Asesoramiento integral del proyecto</li>
+        </ul>
+      </div>
+
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/><polyline points="15,5 18,3 21,5"/></svg>
+        </div>
+        <div class="service-name">Contabilidad 4.0 &amp; BI</div>
+        <ul class="service-list">
+          <li>Optimización con Python y Power BI</li>
+          <li>Tableros de control en tiempo real</li>
+          <li>Automatización de reportes contables</li>
+          <li>Visualización de KPIs financieros</li>
+        </ul>
       </div>
 
     </div>
@@ -841,6 +848,7 @@
               <option>Certificaciones Contables</option>
               <option>Auditoría de EECC</option>
               <option>Contabilidad 4.0 &amp; Business Intelligence</option>
+              <option>Constitución de Sociedades (SA, SRL, SAS, SAU)</option>
               <option>Otro / Consulta general</option>
             </select>
           </div>
