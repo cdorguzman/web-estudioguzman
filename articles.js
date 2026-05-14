@@ -21,6 +21,51 @@
 const ARTICLES = [
 
   {
+    id: "rifl-formalizacion-laboral-2026",
+    cat: "novedades",
+    catLabel: "Novedades Impositivas",
+    title: "RIFL: reducción de hasta el 85% en contribuciones patronales para nuevas contrataciones",
+    excerpt: "ARCA reglamentó el Régimen de Incentivo a la Formalización Laboral (Ley 27.802). Los empleadores que incorporen trabajadores entre mayo 2026 y abril 2027 pueden reducir sus contribuciones patronales en más del 85% por hasta 48 meses.",
+    date: "Mayo 2026",
+    body: `
+      <p>La Agencia de Recaudación y Control Aduanero (ARCA) reglamentó mediante la <strong>Resolución General 5844/2026</strong> el Régimen de Incentivo a la Formalización Laboral (RIFL), contemplado en la Ley 27.802. El esquema ya está operativo y representa una oportunidad concreta para reducir el costo laboral de nuevas incorporaciones.</p>
+
+      <h3>¿En qué consiste el beneficio?</h3>
+      <p>Los empleadores del sector privado que incorporen trabajadores entre el <strong>1° de mayo de 2026 y el 30 de abril de 2027</strong> podrán reducir sus contribuciones patronales en <strong>más del 85%</strong>. El beneficio se extiende por hasta <strong>48 meses</strong> desde el alta de cada trabajador, lo que lo convierte en un incentivo de largo plazo y no solo una reducción transitoria.</p>
+      <p>Las alícuotas aplicables bajo el RIFL son:</p>
+      <ul>
+        <li><strong>2%</strong> con destino al SIPA, Fondo Nacional de Empleo y Asignaciones Familiares</li>
+        <li><strong>3%</strong> correspondiente al INSSJP (PAMI)</li>
+      </ul>
+      <p>Esto representa una disminución sustancial frente a las alícuotas generales vigentes, mejorando notablemente la ecuación económica de contratar en blanco.</p>
+
+      <h3>¿Qué trabajadores califican?</h3>
+      <p>Para que el beneficio aplique, el trabajador que se incorpora debe encontrarse en alguna de las siguientes situaciones:</p>
+      <ul>
+        <li>No haber tenido una relación laboral registrada al 10 de diciembre de 2025</li>
+        <li>No haber trabajado en relación de dependencia en el sector privado durante los 6 meses previos al alta</li>
+        <li>Haber estado inscripto en el Monotributo con anterioridad al alta laboral</li>
+        <li>Haber tenido su último empleo en el sector público (nacional, provincial, municipal o CABA)</li>
+      </ul>
+
+      <h3>Paso a paso para adherirse</h3>
+      <p>El procedimiento es sencillo pero requiere utilizar los códigos correctos en los sistemas de ARCA:</p>
+      <ul>
+        <li><strong>Paso 1 — Registrar al trabajador:</strong> ingresá al servicio <em>Simplificación Registral</em> en ARCA con tu clave fiscal y seleccioná el código de modalidad de contratación <strong>"710 - Régimen de Incentivo para la Formalización Laboral – Ley 27.802"</strong>.</li>
+        <li><strong>Paso 2 — Declaración jurada:</strong> en el sistema <em>Declaración en Línea</em>, consigná ese mismo código al determinar los aportes y contribuciones nominativas. El sistema aplicará automáticamente las alícuotas reducidas.</li>
+        <li><strong>Paso 3 — Versión del sistema:</strong> asegurate de utilizar el <em>release 7 de la versión 47</em> del sistema, que incorpora las adecuaciones para el RIFL.</li>
+      </ul>
+
+      <h3>¿Qué contribuciones se reducen?</h3>
+      <p>La reducción alcanza a las contribuciones con destino al <strong>SIPA, INSSJP, Fondo Nacional de Empleo y Régimen de Asignaciones Familiares</strong>, conforme lo previsto en el artículo 159 de la Ley 27.802. Además, los trabajadores incorporados bajo este régimen conservan flexibilidad para complementar sus ingresos dentro del régimen general o a través del Monotributo.</p>
+
+      <h3>¿Por qué es relevante para tu empresa?</h3>
+      <p>Este régimen representa una ventana de 12 meses para incorporar personal con un costo contributivo mínimo y extender ese beneficio por 4 años. Para empresas que venían postergando incorporaciones por el peso de las cargas sociales, el RIFL ofrece condiciones inéditas en el marco normativo argentino reciente.</p>
+      <p>En Guzmán &amp; Asociados analizamos tu situación particular para determinar si tu empresa puede adherirse, qué trabajadores califican y cómo implementarlo correctamente desde el primer alta.</p>
+    `
+  },
+
+  {
     id: "monotributo-recategorizacion",
     cat: "novedades",
     catLabel: "Novedades Impositivas",
